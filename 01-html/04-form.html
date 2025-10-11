@@ -8,8 +8,44 @@
   </head>
   <body>
     <main>
-      <form action="/submit">
-        <!-- Add your code here -->
+      <form action="">
+        <h1>Spongebob Survey</h1>
+        <div>
+          <label for="username">Name: </label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Full Name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" placeholder="email" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <input type="radio" name="character" id="spongebob" />
+          <label for="spongebob">Spongebob</label>
+          <br />
+          <input type="radio" name="character" id="sandy" />
+          <label for="sandy">Sandy</label>
+          <br />
+          <input type="radio" name="character" id="patrick" />
+          <label for="patrick">Patrick</label>
+        </fieldset>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <input type="checkbox" name="yes1" id="yes1" />
+          <label for="yes1">Yes, I have watched all the episodes!</label>
+          <br />
+          <input type="checkbox" name="yes2" id="yes2" />
+          <label for="yes2">Yes, it has the best memes!</label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
       </form>
     </main>
   </body>
